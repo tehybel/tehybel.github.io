@@ -1,0 +1,46 @@
+/* Main page with stikky-footer
+-------------------------------------------------- */
+html,
+body {
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 21px;
+  /* The html and body elements cannot have any padding or margin. */
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+  padding-top: 5%;
+}
+
+.page-not-found{
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.avatar{
+  padding-top:  30%;
+  padding-bottom: 20px;
+  width: 200px;
+}
+
+.avatar img {
+	width: 100%;
+	height: 100%;
+}
+
+.social{
+  word-spacing: 5px;
+}
+
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+}
